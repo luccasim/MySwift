@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HjX-32-qmY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cNm-zL-djz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="a0p-6F-Bx4">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oxF-s2-zpX">
+                                        <rect key="frame" x="0.0" y="111" width="375" height="111.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qML-hc-j4T">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="π"/>
+                                                <connections>
+                                                    <action selector="performOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aue-iW-6PD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ki-bj-el2">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="e"/>
+                                                <connections>
+                                                    <action selector="performOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MDv-Z5-BWa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-L4-EBE">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="±"/>
+                                                <connections>
+                                                    <action selector="performOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Poc-DY-Lx0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1a-gh-VNb">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="x"/>
+                                                <connections>
+                                                    <action selector="performOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdn-YJ-z6Y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OuA-T1-cF1">
+                                        <rect key="frame" x="0.0" y="222.5" width="375" height="111"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhH-FL-21h">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6X-07-jAD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bal-XJ-t5S">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkf-PR-kHU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUc-Mg-x4v">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OO8-4O-Pc3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp0-Mk-oNh">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="performOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1a5-Mj-YVA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4AV-k4-wR5">
+                                        <rect key="frame" x="0.0" y="333.5" width="375" height="111"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y39-qe-HWA">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FO3-2X-wyS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmK-gC-RKK">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Lt-FM-xNh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="har-63-o1h">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXR-eS-xvW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iw6-jh-aG7">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="performOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naw-s5-yeH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IsD-3W-D01">
+                                        <rect key="frame" x="0.0" y="444.5" width="375" height="111.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpu-RA-T1i">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Eu-fj-iit"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIs-Ho-anV">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pp6-m4-ogJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDx-ey-ffh">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3VU-9S-d9d"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jq-gJ-XIj">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="C"/>
+                                                <connections>
+                                                    <action selector="performOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDI-nv-ozN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iau-Hz-BfS">
+                                        <rect key="frame" x="0.0" y="556" width="375" height="111"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zdk-fb-PU9">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8Y-AM-CXE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="111"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="0"/>
+                                                        <connections>
+                                                            <action selector="digitButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HM6-6A-u5S"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8F-t4-v7M">
+                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="111"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Save"/>
+                                                        <connections>
+                                                            <action selector="performOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQc-T7-TnU"/>
+                                                            <action selector="saveButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzN-PP-RAd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awa-Kc-CtP">
+                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="111"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Restore"/>
+                                                        <connections>
+                                                            <action selector="restoreButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ytw-fn-qzU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qg5-wP-f7b">
+                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="111"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="="/>
+                                                        <connections>
+                                                            <action selector="performOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tk9-oZ-R4i"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HjX-32-qmY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Jzw-Gg-4OL"/>
+                            <constraint firstItem="HjX-32-qmY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OOT-Aq-UbY"/>
+                            <constraint firstItem="HjX-32-qmY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="TBw-g0-mUU"/>
+                            <constraint firstItem="HjX-32-qmY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wuJ-zA-Ort"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="display" destination="a0p-6F-Bx4" id="Xhg-gt-6CP"/>
+                        <outletCollection property="digitButtons" destination="uDx-ey-ffh" collectionClass="NSMutableArray" id="33L-K1-B4d"/>
+                        <outletCollection property="digitButtons" destination="HIs-Ho-anV" collectionClass="NSMutableArray" id="EAk-lb-ffh"/>
+                        <outletCollection property="digitButtons" destination="zpu-RA-T1i" collectionClass="NSMutableArray" id="Cda-6Y-TGt"/>
+                        <outletCollection property="digitButtons" destination="har-63-o1h" collectionClass="NSMutableArray" id="F8C-cZ-BTj"/>
+                        <outletCollection property="digitButtons" destination="tmK-gC-RKK" collectionClass="NSMutableArray" id="Vc7-r1-55I"/>
+                        <outletCollection property="digitButtons" destination="Y39-qe-HWA" collectionClass="NSMutableArray" id="mON-wM-ePQ"/>
+                        <outletCollection property="digitButtons" destination="JUc-Mg-x4v" collectionClass="NSMutableArray" id="Xb3-ci-CC8"/>
+                        <outletCollection property="digitButtons" destination="bal-XJ-t5S" collectionClass="NSMutableArray" id="swd-Sw-MIf"/>
+                        <outletCollection property="digitButtons" destination="AhH-FL-21h" collectionClass="NSMutableArray" id="Oyt-kB-nSM"/>
+                        <outletCollection property="operatorButtons" destination="Qg5-wP-f7b" collectionClass="NSMutableArray" id="5Sa-Th-alV"/>
+                        <outletCollection property="operatorButtons" destination="1Jq-gJ-XIj" collectionClass="NSMutableArray" id="p60-1z-Ep1"/>
+                        <outletCollection property="operatorButtons" destination="iw6-jh-aG7" collectionClass="NSMutableArray" id="Y4A-cV-WDK"/>
+                        <outletCollection property="operatorButtons" destination="Gp0-Mk-oNh" collectionClass="NSMutableArray" id="Kcz-oj-ijM"/>
+                        <outletCollection property="operatorButtons" destination="s1a-gh-VNb" collectionClass="NSMutableArray" id="CDz-mq-FHX"/>
+                        <outletCollection property="operatorButtons" destination="eWB-L4-EBE" collectionClass="NSMutableArray" id="EQN-wC-m03"/>
+                        <outletCollection property="operatorButtons" destination="7Ki-bj-el2" collectionClass="NSMutableArray" id="5Cg-M8-J88"/>
+                        <outletCollection property="operatorButtons" destination="qML-hc-j4T" collectionClass="NSMutableArray" id="dDd-B9-l0v"/>
+                        <outletCollection property="digitButtons" destination="g8Y-AM-CXE" collectionClass="NSMutableArray" id="uQL-xP-OtV"/>
+                        <outletCollection property="digitButtons" destination="k8F-t4-v7M" collectionClass="NSMutableArray" id="RO2-qi-pHB"/>
+                        <outletCollection property="digitButtons" destination="awa-Kc-CtP" collectionClass="NSMutableArray" id="Cnb-Wu-iMO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.80000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
