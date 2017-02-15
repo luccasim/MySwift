@@ -24,7 +24,6 @@ class DeathNoteController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationController?.navigationBar.barTintColor = UIColor.clear
         setup()
     }
     
