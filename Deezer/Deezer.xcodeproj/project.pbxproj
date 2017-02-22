@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE178DB51E59E63600D66649 /* extensionPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE178DB41E59E63600D66649 /* extensionPlaylist.swift */; };
+		DE7D234E1E5723C200FBFAD2 /* APIDeezer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D234D1E5723C200FBFAD2 /* APIDeezer.swift */; };
+		DE7D23541E579B2000FBFAD2 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D23531E579B2000FBFAD2 /* Playlist.swift */; };
+		DE7D235A1E57A02E00FBFAD2 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D23581E57A02E00FBFAD2 /* PlaylistCell.swift */; };
+		DE7D235B1E57A02E00FBFAD2 /* PlaylistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7D23591E57A02E00FBFAD2 /* PlaylistCell.xib */; };
+		DED33C7D1E5A468A003DEEDA /* PlaylistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED33C7C1E5A468A003DEEDA /* PlaylistManager.swift */; };
+		DED33C7F1E5A4731003DEEDA /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED33C7E1E5A4731003DEEDA /* PlaylistViewController.swift */; };
+		DED33C811E5A481D003DEEDA /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED33C801E5A481D003DEEDA /* AlbumViewController.swift */; };
+		DED33C831E5A4A98003DEEDA /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED33C821E5A4A98003DEEDA /* TrackListViewController.swift */; };
+		DEF988081E55E37700E039AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF988071E55E37700E039AC /* AppDelegate.swift */; };
+		DEF9880A1E55E37700E039AC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF988091E55E37700E039AC /* WebViewController.swift */; };
+		DEF9880D1E55E37700E039AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF9880B1E55E37700E039AC /* Main.storyboard */; };
+		DEF9880F1E55E37700E039AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF9880E1E55E37700E039AC /* Assets.xcassets */; };
+		DEF988121E55E37700E039AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF988101E55E37700E039AC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE178DB41E59E63600D66649 /* extensionPlaylist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensionPlaylist.swift; sourceTree = "<group>"; };
+		DE7D234D1E5723C200FBFAD2 /* APIDeezer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDeezer.swift; sourceTree = "<group>"; };
+		DE7D23531E579B2000FBFAD2 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		DE7D23581E57A02E00FBFAD2 /* PlaylistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
+		DE7D23591E57A02E00FBFAD2 /* PlaylistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistCell.xib; sourceTree = "<group>"; };
+		DED33C7C1E5A468A003DEEDA /* PlaylistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistManager.swift; sourceTree = "<group>"; };
+		DED33C7E1E5A4731003DEEDA /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		DED33C801E5A481D003DEEDA /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		DED33C821E5A4A98003DEEDA /* TrackListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
+		DEF988041E55E37700E039AC /* Deezer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deezer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF988071E55E37700E039AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEF988091E55E37700E039AC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DEF9880C1E55E37700E039AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEF9880E1E55E37700E039AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEF988111E55E37700E039AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEF988131E55E37700E039AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEF988011E55E37700E039AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE7D23511E57839700FBFAD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEF988091E55E37700E039AC /* WebViewController.swift */,
+				DED33C801E5A481D003DEEDA /* AlbumViewController.swift */,
+				DED33C7E1E5A4731003DEEDA /* PlaylistViewController.swift */,
+				DED33C821E5A4A98003DEEDA /* TrackListViewController.swift */,
+				DEF9880B1E55E37700E039AC /* Main.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DE7D23521E57839F00FBFAD2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D234D1E5723C200FBFAD2 /* APIDeezer.swift */,
+				DED33C7C1E5A468A003DEEDA /* PlaylistManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		DE7D23551E579B2600FBFAD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D23531E579B2000FBFAD2 /* Playlist.swift */,
+				DE178DB41E59E63600D66649 /* extensionPlaylist.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DE7D235C1E57A03800FBFAD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D23581E57A02E00FBFAD2 /* PlaylistCell.swift */,
+				DE7D23591E57A02E00FBFAD2 /* PlaylistCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DEF987FB1E55E37700E039AC = {
+			isa = PBXGroup;
+			children = (
+				DEF988061E55E37700E039AC /* Deezer */,
+				DEF988051E55E37700E039AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEF988051E55E37700E039AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF988041E55E37700E039AC /* Deezer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF988061E55E37700E039AC /* Deezer */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D235C1E57A03800FBFAD2 /* View */,
+				DE7D23551E579B2600FBFAD2 /* Model */,
+				DE7D23511E57839700FBFAD2 /* Controller */,
+				DE7D23521E57839F00FBFAD2 /* API */,
+				DEF988191E55E38500E039AC /* Supporting Files */,
+			);
+			path = Deezer;
+			sourceTree = "<group>";
+		};
+		DEF988191E55E38500E039AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEF988071E55E37700E039AC /* AppDelegate.swift */,
+				DEF9880E1E55E37700E039AC /* Assets.xcassets */,
+				DEF988101E55E37700E039AC /* LaunchScreen.storyboard */,
+				DEF988131E55E37700E039AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEF988031E55E37700E039AC /* Deezer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF988161E55E37700E039AC /* Build configuration list for PBXNativeTarget "Deezer" */;
+			buildPhases = (
+				DEF988001E55E37700E039AC /* Sources */,
+				DEF988011E55E37700E039AC /* Frameworks */,
+				DEF988021E55E37700E039AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Deezer;
+			productName = Deezer;
+			productReference = DEF988041E55E37700E039AC /* Deezer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEF987FC1E55E37700E039AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Owee;
+				TargetAttributes = {
+					DEF988031E55E37700E039AC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DEF987FF1E55E37700E039AC /* Build configuration list for PBXProject "Deezer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEF987FB1E55E37700E039AC;
+			productRefGroup = DEF988051E55E37700E039AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEF988031E55E37700E039AC /* Deezer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEF988021E55E37700E039AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF988121E55E37700E039AC /* LaunchScreen.storyboard in Resources */,
+				DEF9880F1E55E37700E039AC /* Assets.xcassets in Resources */,
+				DEF9880D1E55E37700E039AC /* Main.storyboard in Resources */,
+				DE7D235B1E57A02E00FBFAD2 /* PlaylistCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEF988001E55E37700E039AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED33C7F1E5A4731003DEEDA /* PlaylistViewController.swift in Sources */,
+				DEF9880A1E55E37700E039AC /* WebViewController.swift in Sources */,
+				DE178DB51E59E63600D66649 /* extensionPlaylist.swift in Sources */,
+				DED33C811E5A481D003DEEDA /* AlbumViewController.swift in Sources */,
+				DE7D235A1E57A02E00FBFAD2 /* PlaylistCell.swift in Sources */,
+				DEF988081E55E37700E039AC /* AppDelegate.swift in Sources */,
+				DED33C7D1E5A468A003DEEDA /* PlaylistManager.swift in Sources */,
+				DE7D234E1E5723C200FBFAD2 /* APIDeezer.swift in Sources */,
+				DED33C831E5A4A98003DEEDA /* TrackListViewController.swift in Sources */,
+				DE7D23541E579B2000FBFAD2 /* Playlist.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DEF9880B1E55E37700E039AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF9880C1E55E37700E039AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEF988101E55E37700E039AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF988111E55E37700E039AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEF988141E55E37700E039AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF988151E55E37700E039AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEF988171E55E37700E039AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Deezer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "luc-42-student.Deezer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DEF988181E55E37700E039AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Deezer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "luc-42-student.Deezer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEF987FF1E55E37700E039AC /* Build configuration list for PBXProject "Deezer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF988141E55E37700E039AC /* Debug */,
+				DEF988151E55E37700E039AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF988161E55E37700E039AC /* Build configuration list for PBXNativeTarget "Deezer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF988171E55E37700E039AC /* Debug */,
+				DEF988181E55E37700E039AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEF987FC1E55E37700E039AC /* Project object */;
+}
