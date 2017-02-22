@@ -101,7 +101,6 @@ class APIDeezer {
                         print(err)
                     }
                     self.getPlaylist(playlistID)
-//                    DispatchQueue.main.sync {self.delegate?.startApp(self, Data: self.getPlaylist())}
                 }
             }
             task.resume()
