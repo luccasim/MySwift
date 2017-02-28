@@ -7,33 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6D55C791E65B2FB00E0C6DD /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C6E1E65B2FB00E0C6DD /* Achievements.swift */; };
+		C6D55C7A1E65B2FB00E0C6DD /* api42.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C6F1E65B2FB00E0C6DD /* api42.swift */; };
+		C6D55C7B1E65B2FB00E0C6DD /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C701E65B2FB00E0C6DD /* Client.swift */; };
+		C6D55C7C1E65B2FB00E0C6DD /* httpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C711E65B2FB00E0C6DD /* httpClient.swift */; };
+		C6D55C7D1E65B2FB00E0C6DD /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C721E65B2FB00E0C6DD /* Info.swift */; };
+		C6D55C7E1E65B2FB00E0C6DD /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C731E65B2FB00E0C6DD /* Profile.swift */; };
+		C6D55C7F1E65B2FB00E0C6DD /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C741E65B2FB00E0C6DD /* Projects.swift */; };
+		C6D55C801E65B2FB00E0C6DD /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C751E65B2FB00E0C6DD /* Skills.swift */; };
+		C6D55C811E65B2FB00E0C6DD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C761E65B2FB00E0C6DD /* Token.swift */; };
+		C6D55C821E65B2FB00E0C6DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C771E65B2FB00E0C6DD /* User.swift */; };
+		C6D55C831E65B2FB00E0C6DD /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C781E65B2FB00E0C6DD /* UserManager.swift */; };
+		C6D55C851E65B44100E0C6DD /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C841E65B44100E0C6DD /* RequestViewController.swift */; };
+		C6D55C871E65B5E400E0C6DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C861E65B5E400E0C6DD /* ProfileViewController.swift */; };
+		C6D55C891E65B5F400E0C6DD /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C881E65B5F400E0C6DD /* AchievementViewController.swift */; };
+		C6D55C8B1E65B65800E0C6DD /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C8A1E65B65800E0C6DD /* ProjectsViewController.swift */; };
+		C6D55C8D1E65B66800E0C6DD /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D55C8C1E65B66800E0C6DD /* SkillsViewController.swift */; };
 		C6E15C721E642B2600AA6623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E15C711E642B2600AA6623 /* AppDelegate.swift */; };
-		C6E15C741E642B2600AA6623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E15C731E642B2600AA6623 /* ViewController.swift */; };
 		C6E15C771E642B2600AA6623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E15C751E642B2600AA6623 /* Main.storyboard */; };
 		C6E15C791E642B2600AA6623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E15C781E642B2600AA6623 /* Assets.xcassets */; };
 		C6E15C7C1E642B2600AA6623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E15C7A1E642B2600AA6623 /* LaunchScreen.storyboard */; };
-		C6E15C8B1E64A6BC00AA6623 /* api42.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E15C851E64A6BC00AA6623 /* api42.swift */; };
-		C6E15C8C1E64A6BC00AA6623 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E15C861E64A6BC00AA6623 /* Client.swift */; };
-		C6E15C8D1E64A6BC00AA6623 /* httpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E15C871E64A6BC00AA6623 /* httpClient.swift */; };
-		C6E15C8E1E64A6BC00AA6623 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E15C881E64A6BC00AA6623 /* Token.swift */; };
-		C6E15C8F1E64A6BC00AA6623 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E15C891E64A6BC00AA6623 /* User.swift */; };
-		C6E15C901E64A6BC00AA6623 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E15C8A1E64A6BC00AA6623 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6D55C6E1E65B2FB00E0C6DD /* Achievements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		C6D55C6F1E65B2FB00E0C6DD /* api42.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = api42.swift; sourceTree = "<group>"; };
+		C6D55C701E65B2FB00E0C6DD /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		C6D55C711E65B2FB00E0C6DD /* httpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = httpClient.swift; sourceTree = "<group>"; };
+		C6D55C721E65B2FB00E0C6DD /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		C6D55C731E65B2FB00E0C6DD /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C6D55C741E65B2FB00E0C6DD /* Projects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		C6D55C751E65B2FB00E0C6DD /* Skills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		C6D55C761E65B2FB00E0C6DD /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		C6D55C771E65B2FB00E0C6DD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C6D55C781E65B2FB00E0C6DD /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		C6D55C841E65B44100E0C6DD /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		C6D55C861E65B5E400E0C6DD /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C6D55C881E65B5F400E0C6DD /* AchievementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		C6D55C8A1E65B65800E0C6DD /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		C6D55C8C1E65B66800E0C6DD /* SkillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		C6E15C6E1E642B2600AA6623 /* Swifty-Compagnon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty-Compagnon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E15C711E642B2600AA6623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6E15C731E642B2600AA6623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6E15C761E642B2600AA6623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6E15C781E642B2600AA6623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6E15C7B1E642B2600AA6623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6E15C7D1E642B2600AA6623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6E15C851E64A6BC00AA6623 /* api42.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = api42.swift; sourceTree = "<group>"; };
-		C6E15C861E64A6BC00AA6623 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		C6E15C871E64A6BC00AA6623 /* httpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = httpClient.swift; sourceTree = "<group>"; };
-		C6E15C881E64A6BC00AA6623 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
-		C6E15C891E64A6BC00AA6623 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		C6E15C8A1E64A6BC00AA6623 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,11 +65,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6D55C6D1E65B2FB00E0C6DD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C6D55C6E1E65B2FB00E0C6DD /* Achievements.swift */,
+				C6D55C6F1E65B2FB00E0C6DD /* api42.swift */,
+				C6D55C701E65B2FB00E0C6DD /* Client.swift */,
+				C6D55C711E65B2FB00E0C6DD /* httpClient.swift */,
+				C6D55C721E65B2FB00E0C6DD /* Info.swift */,
+				C6D55C731E65B2FB00E0C6DD /* Profile.swift */,
+				C6D55C741E65B2FB00E0C6DD /* Projects.swift */,
+				C6D55C751E65B2FB00E0C6DD /* Skills.swift */,
+				C6D55C761E65B2FB00E0C6DD /* Token.swift */,
+				C6D55C771E65B2FB00E0C6DD /* User.swift */,
+				C6D55C781E65B2FB00E0C6DD /* UserManager.swift */,
+			);
+			name = Sources;
+			path = ../SwiftyCompagnonPlayground.playground/Sources;
+			sourceTree = "<group>";
+		};
 		C6E15C651E642B2500AA6623 = {
 			isa = PBXGroup;
 			children = (
 				C6E15C701E642B2600AA6623 /* Swifty-Compagnon */,
-				C6E15C841E64A6BC00AA6623 /* Sources */,
 				C6E15C6F1E642B2600AA6623 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,8 +103,13 @@
 		C6E15C701E642B2600AA6623 /* Swifty-Compagnon */ = {
 			isa = PBXGroup;
 			children = (
-				C6E15C731E642B2600AA6623 /* ViewController.swift */,
+				C6D55C841E65B44100E0C6DD /* RequestViewController.swift */,
+				C6D55C861E65B5E400E0C6DD /* ProfileViewController.swift */,
+				C6D55C881E65B5F400E0C6DD /* AchievementViewController.swift */,
+				C6D55C8A1E65B65800E0C6DD /* ProjectsViewController.swift */,
+				C6D55C8C1E65B66800E0C6DD /* SkillsViewController.swift */,
 				C6E15C751E642B2600AA6623 /* Main.storyboard */,
+				C6D55C6D1E65B2FB00E0C6DD /* Sources */,
 				C6E15C831E642B3D00AA6623 /* Supporting Files */,
 			);
 			path = "Swifty-Compagnon";
@@ -83,20 +124,6 @@
 				C6E15C7D1E642B2600AA6623 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C6E15C841E64A6BC00AA6623 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C6E15C851E64A6BC00AA6623 /* api42.swift */,
-				C6E15C861E64A6BC00AA6623 /* Client.swift */,
-				C6E15C871E64A6BC00AA6623 /* httpClient.swift */,
-				C6E15C881E64A6BC00AA6623 /* Token.swift */,
-				C6E15C891E64A6BC00AA6623 /* User.swift */,
-				C6E15C8A1E64A6BC00AA6623 /* UserManager.swift */,
-			);
-			name = Sources;
-			path = SwiftyCompagnonPlayground.playground/Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,14 +198,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E15C741E642B2600AA6623 /* ViewController.swift in Sources */,
-				C6E15C8D1E64A6BC00AA6623 /* httpClient.swift in Sources */,
-				C6E15C8B1E64A6BC00AA6623 /* api42.swift in Sources */,
-				C6E15C8E1E64A6BC00AA6623 /* Token.swift in Sources */,
-				C6E15C8C1E64A6BC00AA6623 /* Client.swift in Sources */,
+				C6D55C8B1E65B65800E0C6DD /* ProjectsViewController.swift in Sources */,
+				C6D55C7F1E65B2FB00E0C6DD /* Projects.swift in Sources */,
+				C6D55C851E65B44100E0C6DD /* RequestViewController.swift in Sources */,
+				C6D55C7C1E65B2FB00E0C6DD /* httpClient.swift in Sources */,
+				C6D55C7E1E65B2FB00E0C6DD /* Profile.swift in Sources */,
+				C6D55C871E65B5E400E0C6DD /* ProfileViewController.swift in Sources */,
+				C6D55C831E65B2FB00E0C6DD /* UserManager.swift in Sources */,
+				C6D55C801E65B2FB00E0C6DD /* Skills.swift in Sources */,
+				C6D55C791E65B2FB00E0C6DD /* Achievements.swift in Sources */,
+				C6D55C7A1E65B2FB00E0C6DD /* api42.swift in Sources */,
+				C6D55C811E65B2FB00E0C6DD /* Token.swift in Sources */,
+				C6D55C821E65B2FB00E0C6DD /* User.swift in Sources */,
+				C6D55C7B1E65B2FB00E0C6DD /* Client.swift in Sources */,
 				C6E15C721E642B2600AA6623 /* AppDelegate.swift in Sources */,
-				C6E15C901E64A6BC00AA6623 /* UserManager.swift in Sources */,
-				C6E15C8F1E64A6BC00AA6623 /* User.swift in Sources */,
+				C6D55C7D1E65B2FB00E0C6DD /* Info.swift in Sources */,
+				C6D55C8D1E65B66800E0C6DD /* SkillsViewController.swift in Sources */,
+				C6D55C891E65B5F400E0C6DD /* AchievementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

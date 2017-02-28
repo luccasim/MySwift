@@ -1,31 +1,35 @@
 import Foundation
 
 public class Token {
-    public var accessToken : String!
-    public var tokenType : String!
-    public var expires : Int!
-    public var scope : String!
-    public var created : Int!
+    fileprivate var accessToken : String!
+    fileprivate var tokenType : String!
+    fileprivate var expires : Int!
+    fileprivate var scope : String!
+    fileprivate var created : Int!
     private var isSet = false
+    private var expireTimestamp : Int!
 
+    public var bearerToken : String {
+        return accessToken ?? "UNVALID TOKEN"
+    }
+    
     public var valid : Bool {
         if isSet {
-            let currentTimestamp = Int(Date().timeIntervalSince1970)
-            let endTimestamp = created + expires
-            print(endTimestamp - currentTimestamp)
-            return endTimestamp - currentTimestamp > 0
+            let currentTimestamp = Int(Date().timeIntervalSinceNow)
+            return expireTimestamp - currentTimestamp > 0
         }
         return false
     }
     
-    public func setToken(AccessToken token:String, Type type:String, TimeExpire timeexpire:Int, Scope scope:String, Created created:Int)
+    public func setToken(AccessToken token:String, Type type:String, TimeExpire timeExpire:Int, Scope scope:String, Created created:Int)
     {
         self.accessToken = token
         self.tokenType = type
-        self.expires = timeexpire
+        self.expires = timeExpire
         self.scope = scope
         self.created = created
         self.isSet = true
+        self.expireTimestamp = Int(Date().timeIntervalSinceNow) + timeExpire
     }
 }
 

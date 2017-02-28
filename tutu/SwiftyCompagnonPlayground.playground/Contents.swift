@@ -5,7 +5,5 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 let api = api42.shared
 
-api.loginRequest(Login: "fsylla")
-
-//api.loginRequest(Login: "luccasim")
+api.loginRequest(Login: "luccasim")
 
