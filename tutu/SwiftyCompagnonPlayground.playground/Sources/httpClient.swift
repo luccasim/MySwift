@@ -38,7 +38,7 @@ public class HttpClient{
         }
     }
     
-    private func loginRequest(_ log:String, Callback callback: @escaping (User)-> Void)
+    private func loginRequest(_ log:String, Callback callback: @escaping (User?, String?)-> Void)
     {
         if let url = URL(string: client.userUrl + log){
             var request = URLRequest(url: url)
@@ -54,11 +54,11 @@ public class HttpClient{
                                 let projects = self.parseProjects(Json: json)
                                 let achievements = self.parseAchievement(Json: json)
                                 let user = User(Profile: profile, Skills: skills, Projects: projects, Achievements: achievements)
-                                callback(user)
+                                callback(user, nil)
                             }
                         }
-                        catch let err {
-                            print(err)
+                        catch {
+                            callback(nil, "UnValid Query")
                         }
                     }
                 }
@@ -66,7 +66,7 @@ public class HttpClient{
         }
     }
     
-    public func getRequest(Login log:String, Callback callback: @escaping (User)-> Void)
+    public func getRequest(Login log:String, Callback callback: @escaping (User?, String?)-> Void)
     {
         if token.valid {
             loginRequest(log, Callback: callback)

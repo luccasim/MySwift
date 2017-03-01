@@ -15,3 +15,14 @@ public class User {
         self.skills = skills
     }
 }
+
+extension User : Hashable {
+    public var hashValue: Int {
+        return profile.login.hashValue
+    }
+    
+    public static func ==(lhs: User, rhs: User) -> Bool {
+        return
+            lhs.profile.login == rhs.profile.login
+    }
+}

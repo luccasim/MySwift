@@ -16,6 +16,7 @@ class RequestViewController: UIViewController {
             textField.autocorrectionType = .no
         }
     }
+    @IBOutlet weak var infoLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!{
         didSet{
@@ -33,35 +34,25 @@ class RequestViewController: UIViewController {
             self.tableView.isHidden = true
         }
     }
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        var dvc = segue.destination
-//        if let tabcon = dvc as? UITabBarController{
-//            dvc = (tabcon.viewControllers?[1])!
-//        }
-//        if let identifier = segue.identifier,
-//            let dest = dvc as? ProfileViewController,
-//            let user = sender as? User{
-//            switch identifier {
-//            case "user":
-//                dest.data = user.profile
-//            default:
-//                break
-//            }
-//        }
-//    }
+    
     override func viewWillAppear(_ animated: Bool) {
         tableView.isHidden = false
         if api.getUsers().count == 0 {
             tableView.isHidden = true
         }
         tableView.reloadData()
+        textField.text = ""
+        infoLabel.text = ""
     }
 }
 
 extension RequestViewController : Api42Delegate {
     func userHandle(User user: User) {
-        performSegue(withIdentifier: "user", sender: user)
+        performSegue(withIdentifier: "loginSegue", sender: user)
+    }
+    
+    func errorHandle(StrErr str: String) {
+        infoLabel.text = str
     }
 }
 
@@ -69,7 +60,7 @@ extension RequestViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = api.getUsers()[indexPath.row]
         api.currentUser = user
-        performSegue(withIdentifier: "user", sender: user)
+        performSegue(withIdentifier: "loginSegue", sender: user)
     }
 }
 
@@ -86,6 +77,11 @@ extension RequestViewController : UITableViewDataSource{
 }
 
 extension RequestViewController : UITextFieldDelegate{
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        infoLabel.text = ""
+        return true
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let login = textField.text!
         api.loginRequest(Login: login)

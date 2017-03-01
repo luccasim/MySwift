@@ -11,7 +11,12 @@ public struct Achievements {
     
     mutating func addAchivement(Name name:String, Description description:String, Image image:String)
     {
-        let new = Achievement(name: name, description: description, imageUrl: image)
+        var fullUrlImage = image
+        if let rang = image.range(of: "/achi"){
+            let newstr = image.substring(from: rang.lowerBound)
+            fullUrlImage = "https://cdn.intra.42.fr\(newstr)"
+        }
+        let new = Achievement(name: name, description: description, imageUrl: fullUrlImage)
         self.achievements.append(new)
     }
 }

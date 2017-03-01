@@ -9,7 +9,9 @@ public class UserManager {
     
     func addUser(User user:User)
     {
-        data.append(user)
+        if data.contains(user) == false {
+            data.append(user)
+        }
     }
     
     subscript (index: Int) -> User
